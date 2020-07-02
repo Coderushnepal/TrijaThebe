@@ -1,0 +1,46 @@
+.container {
+	width: 100%;
+	height: 100%;
+}
+.top-nav {
+	float: left;
+	width: 100%;
+	outline: 1px solid black;
+	margin-bottom: 20px;
+	height: 59px;
+}
+.one {
+	float: left;
+	width: 100%;
+	outline: 1px solid black;
+	height: 70px;
+}
+.two , .three , .four , .five{
+	margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 63px;
+	float: left;
+	width: 70%;
+	outline: 1px solid;
+	height: 270px;
+}
+.six {
+	float: left;
+	width: 100%;
+	outline: 1px solid black;
+	height: 50px;
+}
+@media screen and (min-width: 600px) {
+	.two {
+		width: 20%;
+	}
+	.three {
+		width: 20%;
+	}
+	.four {
+		width: 20%;
+	}
+	.five {
+		width: 20%;
+	}
+}
