@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question Two</title>
+	<script type="text/javascript">
+		function censorString(str) {
+			let data_list = '';
+			word = str.split(' ');
+			for (i = 0; i < word.length; i++){
+				var count = word[i].length;
+				if (count > 0) {
+					data_list = data_list + '*'.repeat(count) + ' ';
+				}
+				else {
+					data_list = data_list + word[i] + ' ';
+				}
+			}
+			return data_list;
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
