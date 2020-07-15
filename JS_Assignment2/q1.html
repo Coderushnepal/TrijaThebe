@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 2</title>
+	<script type="text/javascript">
+		var listofNames = `Neeta sapkota
+		Neha Shiwakoti
+		Srijana Khatiwada 
+		Smrity Dhakal
+		Sami Chakradhar
+		Kirtee Maharjan
+		Trija Thebe
+		Sindhu Aryal
+		Kusum Ranjitkar
+		Elisha Bista
+		Rachana kafle
+		Barsha Maharjan
+		Pooja Gurung
+		Bisikha Subedi
+		Kritika Baral
+		Srijana Thulung`;
+		var arr = [
+			{
+				id: 1,
+				firstName: 'Neeta',
+				lastName: 'Sapkota'
+			},
+			{
+				id: 2,
+				firstName: 'Neha',
+				lastName: 'Shiwakoti'
+			},
+			{
+				id: 3,
+				firstName: 'Srijana',
+				lastName: 'Khatiwada'
+			},
+			{
+				id: 4,
+				firstName: 'Smrity',
+				lastName: 'Dhakal'
+			},
+			{
+				id: 5,
+				firstName: 'Sami',
+				lastName: 'Chakradhar'
+			},
+			{
+				id: 6,
+				firstName: 'Kirtee',
+				lastName: 'Maharjan'
+			},
+			{
+				id: 7,
+				firstName: 'Trija',
+				lastName: 'Thebe'
+			},
+			{
+				id: 8,
+				firstName: 'Sindhu',
+				lastName: 'Aryal'
+			},
+			{
+				id: 9,
+				firstName: 'Kusum',
+				lastName: 'Ranjitkar'
+			},
+			{
+				id: 10,
+				firstName: 'Elisha',
+				lastName: 'Bista'
+			},
+			{
+				id: 11,
+				firstName: 'Rachana',
+				lastName: 'kafle'
+			},
+			{
+				id: 12,
+				firstName: 'Barsha',
+				lastName: 'Maharjan'
+			},
+			
+			{
+				id: 13,
+				firstName: 'Pooja',
+				lastName: 'Gurung'
+			},
+			{
+				id: 14,
+				firstName: 'Bisikha',
+				lastName: 'Subedi'
+			},
+			{
+				id: 15,
+				firstName: 'Kritika',
+				lastName: 'Baral'
+			},
+			{
+				id: 16,
+				firstName: 'Srijana',
+				lastName: 'Thulung'
+			}
+		]
+
+		var first = ""
+		var count = 0
+		for (i in arr){
+			var check = arr[i]['firstName']
+			if (check.startsWith('S')) {
+				count += 1
+				first += arr[i]['firstName'] + "\n";
+			}
+		}
+		console.log((first, count) + " and " + (arr.length - count));
+
+
+		var second = ""
+		var count2 = 0
+		for (i in arr){
+			var check = arr[i]['firstName']
+			if (check.startsWith('A')) {
+				count2 += 1
+				second += arr[i]['firstName'] + "\n";
+			}
+		}
+		console.log((second, count2) + " and " + (arr.length - count2));
+	</script>
+</head>
+<body>
+
+</body>
+</html>
