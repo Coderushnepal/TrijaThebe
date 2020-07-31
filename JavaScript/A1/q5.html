@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+</head>
+<body>
+    <h1>Returning the Objects Keys and Values</h1>  
+    <script>
+    function keysAndValues( obj ) {
+        let obj1 = Object.keys(obj);
+        let obj2 = Object.values(obj);            
+        console.log(obj1);
+        console.log(obj2);            
+    }
+
+    keysAndValues({ a: "Apple", b: "Microsoft", c: "Google" })
+    keysAndValues({ a: 1, b: 2, c: 3 })
+    keysAndValues({ key1: true, key2: false, key3: undefined })
+</script>   
+</body>
+</html>

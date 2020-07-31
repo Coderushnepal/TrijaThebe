@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q4</title>
+</head>
+<body>
+    <h1>Filter Repeating Character Strings</h1>    
+    <script>
+       function filterString(string) {
+            const items = string;
+            const arr = [];
+            items.forEach(function(item) {
+                var value = new Set(item)
+                
+                    if (value.size === 1)
+                    {
+                        arr.push(item);
+                    }                   
+            });
+               
+        console.log(arr); 
+    }
+    filterString([ '88', '999', '22', '545'])
+</script>
+</body>
+</html>

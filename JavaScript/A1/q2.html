@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q2</title>
+</head>
+<body>
+    <h1>Censoring word having length greater than four.</h1>  
+    <script>
+    function censor(string)
+          {
+            var output = string.split(" ");
+                var result = "";
+                for (var i = 0; i < output.length; i++)
+                {
+                    var str1 = output[i];
+                    var n = str1.length;
+                    if (n > 4)
+                    {
+                        str1 = str1.replace(str1,"*".repeat(n));                
+                    }
+                    result = result.concat(str1) + " ";
+                }
+            console.log(result);
+        }
+
+    censor("The code is Fourty");
+</script>   
+</body>
+</html>
