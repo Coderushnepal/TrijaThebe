@@ -1,0 +1,51 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 nad Q2</title>
+</head>
+<body>
+	<h1>Converting the list of names in array of object</h1>    
+	<script>
+	var names = `neeta sapkota
+	Neha shiwakoti
+	Srijana Khatiwada 
+	smrity dhakal
+	Sami Chakradhar
+	Kirtee Maharjan
+	Trija Thebe
+	Sindhu Aryal
+	Kusum Ranjitkar
+	Elisha Bista
+	Rachana kafle
+	Barsha Maharjan
+	pooja gurung
+	Bisikha subedi
+	Kritika Baral
+	Srijana Thulung`;
+	fellow = names.split('\n');
+
+	var output = fellow.map(function(value, index) {
+			var obj = {};
+	        var result = value.split(' ');
+	        
+			obj['id'] = index + 1;
+			obj['firstName'] = value[0].charAt(0).toUpperCase().concat(value[0].slice(1));
+	        obj['lastName'] = value[1].charAt(0).toUpperCase().concat(value[1].slice(1));
+			return obj;	
+	});
+	console.log(output);
+
+
+	var getArrayofQ1 = output;
+		var get = getArrayofQ1.reduce(function(prev, current) {	
+			prev[current.id]= current;
+			delete current.id;	
+			return prev;
+		}, {});    
+	   console.log(get);
+</script>
+</body>
+</html>
