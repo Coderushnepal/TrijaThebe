@@ -1,1 +1,0 @@
-color = ["blue", "purple", "green", "black", "grey", "lightblue", "violet", "maroon"];
