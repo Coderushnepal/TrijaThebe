@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {Link} from 'react-router-dom';
-
+import PropTypes from "prop-types";
 import * as routes from "../../constants/routes";
 
 class Header extends Component {
@@ -17,6 +17,10 @@ class Header extends Component {
             searchText : event.target.value,
         });
     }
+    search = (event) => {
+        event.preventDefault();
+        this.props.setSearchText(this.state.searchText);
+      };
 
     render() {
         return(
@@ -47,5 +51,7 @@ class Header extends Component {
         );
     }
 }
-
+Header.propTypes = {
+  setSearchText: PropTypes.func,
+};
 export default Header;
