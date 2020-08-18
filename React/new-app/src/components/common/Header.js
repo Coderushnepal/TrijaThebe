@@ -39,7 +39,7 @@ class Header extends Component {
                     <div className="header__bottom">
                         <h1>The Beer Bank</h1>
                         <span>Find your favorite beer here</span>
-                        <form>
+                        <form onSubmit = {this.search}>
                             <input type="search" placeholder="Search your beer." 
                             value={this.state.searchText} onChange={this.handleTextChange} />
 

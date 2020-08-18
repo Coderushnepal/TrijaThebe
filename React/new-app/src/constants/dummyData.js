@@ -1,4 +1,4 @@
-export const dummyBeerData = [
+export const dummyBeersData = [
   {
     id: 1,
     name: "Buzz",
