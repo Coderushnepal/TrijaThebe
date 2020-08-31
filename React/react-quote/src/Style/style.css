@@ -1,0 +1,211 @@
+body {
+    background-color: whitesmoke;
+    margin: 0;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.header {
+    width: 100%;
+    background-color: blue;
+    padding: 50px 20px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+.card-grid {
+    display: block;
+    width: 40%; 
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 20px 16px;
+}
+.card-grid:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card-grid{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 1%;
+}
+.navbar ul {
+  list-style-type: none;
+  float: right;
+  margin-right: 15%;
+}
+.navbar li {
+  display: inline;
+  text-decoration: none;
+  margin-left: 25px;
+}
+.search-bar {
+  width: 150px;
+  height: 30px;
+  margin-left: 35%;
+  border-radius: 7%;
+}
+.card h2 {
+    text-align: center;
+}
+.card p {
+    text-align: center;
+}
+
+.like-btn {
+    float: right;
+    margin-right: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: teal;
+    font-size: 17px;
+}
+.like-btn button {
+    background-color: blue;
+    border: none;
+    width: 50px;
+    color: whitesmoke;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar a{
+    text-decoration: none;
+    margin: 0;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.logo {
+    font-family: 'Playball', cursive;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+.modal-cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transform: translateZ(0);
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2.5em 1.5em 1.5em 1.5em;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  @media screen and (min-width: 500px) {
+    /* Center the Modal! */
+    .modal-area {
+      left: 50%;
+      top: 50%;
+      height: auto;
+      transform: translate(-50%, -50%);
+      max-width: 20em;
+      max-height: calc(100% - 1em);
+    }
+  }
+  
+  ._modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em;
+    line-height: 1;
+    background: #f6f6f7;
+    border: 0;
+    box-shadow: 0;
+    cursor: pointer;
+  }
+  
+  ._modal-close-icon {
+    width: 25px;
+    height: 25px;
+    fill: transparent;
+    stroke: black;
+    stroke-linecap: round;
+    stroke-width: 2;
+  }
+  
+  .modal-body {
+    padding-top: 0.25em;
+  }
+  ._hide-visual {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+  }
+  
+  .scroll-lock {
+    overflow: hidden;
+    margin-right: 17px;
+  }
+  .modal-button {
+      background-color: whitesmoke;
+      border: none;
+      font-family: 'Poppins', sans-serif;
+      margin-left: 20px;
+      font-size: 17px;
+  }
+
+  .btn-primary {
+      width: 30%;
+      background-color: blue;
+      padding: 20px 20px;
+  }
+  .form-group {
+      margin-bottom: 20px;
+      width: 100%;
+      margin-left: 10px;
+  }
+  label {
+    margin-bottom: 10px;
+    width: 90%;
+  }
+  .form-control {
+    margin-bottom: 10px;
+    width: 90%;
+  }
+  .main-footer{
+    color: whitesmoke;
+    background-color: black;
+    padding: 10px 10px;
+    position: relative;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+  }
+.row-sm {
+  width: 40%;
+  float: right;
+}
+.about-card {
+  width: 90%;
+  text-align: justify;
+  padding: 10px 10px;
+  margin: auto;
+}
+
+
